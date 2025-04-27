@@ -2,111 +2,60 @@ import { motion } from 'framer-motion';
 
 const Home = () => {
   return (
-    <div className="container mx-auto px-4 py-16">
-      {/* Hero Section */}
-      <motion.section
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-        className="text-center mb-16"
-      >
-        <h1 className="text-4xl md:text-6xl font-bold mb-6">
-          Hi, I'm <span className="text-primary">Your Name</span>
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+      className="max-w-4xl mx-auto"
+    >
+      <div className="text-center mb-12">
+        <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
+          Khadijatou Dibba
         </h1>
-        <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8">
+        <p className="text-xl text-gray-600 dark:text-gray-300 mb-6">
           Full-Stack Developer & Data Scientist
         </p>
-        <div className="flex justify-center space-x-4">
-          <a
-            href="#projects"
-            className="btn btn-primary"
-          >
-            View Projects
-          </a>
-          <a
-            href="#contact"
-            className="btn btn-secondary"
-          >
-            Contact Me
-          </a>
-        </div>
-      </motion.section>
+        <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+          I build modern web applications and analyze data to solve complex problems.
+          Currently pursuing my passion for technology and innovation, particularly in Startups.
+        </p>
+      </div>
 
-      {/* Skills Section */}
-      <motion.section
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.2 }}
-        className="mb-16"
-      >
-        <h2 className="text-3xl font-bold text-center mb-8">Skills & Expertise</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Full-Stack Development */}
-          <div className="card">
-            <h3 className="text-xl font-bold mb-4">Full-Stack Development</h3>
-            <ul className="space-y-2">
-              <li>React.js & Next.js</li>
-              <li>Node.js & Express</li>
-              <li>MongoDB & PostgreSQL</li>
-              <li>RESTful APIs</li>
-            </ul>
-          </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <motion.div
+          initial={{ opacity: 0, x: -20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md"
+        >
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
+            Skills
+          </h2>
+          <ul className="space-y-2">
+            <li className="text-gray-600 dark:text-gray-300">• React & Next.js</li>
+            <li className="text-gray-600 dark:text-gray-300">• Python</li>
+            <li className="text-gray-600 dark:text-gray-300">• Machine Learning</li>
+            <li className="text-gray-600 dark:text-gray-300">• Cloud Computing</li>
+          </ul>
+        </motion.div>
 
-          {/* Data Science */}
-          <div className="card">
-            <h3 className="text-xl font-bold mb-4">Data Science</h3>
-            <ul className="space-y-2">
-              <li>Python & NumPy</li>
-              <li>Pandas & Scikit-learn</li>
-              <li>Data Visualization</li>
-              <li>Statistical Analysis</li>
-            </ul>
-          </div>
-
-          {/* Machine Learning */}
-          <div className="card">
-            <h3 className="text-xl font-bold mb-4">Machine Learning</h3>
-            <ul className="space-y-2">
-              <li>TensorFlow & PyTorch</li>
-              <li>Deep Learning</li>
-              <li>Natural Language Processing</li>
-              <li>Computer Vision</li>
-            </ul>
-          </div>
-        </div>
-      </motion.section>
-
-      {/* Featured Projects Preview */}
-      <motion.section
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.4 }}
-        className="mb-16"
-      >
-        <h2 className="text-3xl font-bold text-center mb-8">Featured Projects</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {/* Project cards will go here */}
-          <div className="card">
-            <h3 className="text-xl font-bold mb-4">Project 1</h3>
-            <p className="text-gray-600 dark:text-gray-300 mb-4">
-              Description of your first featured project.
-            </p>
-            <a href="#" className="text-primary hover:underline">
-              Learn More →
-            </a>
-          </div>
-          <div className="card">
-            <h3 className="text-xl font-bold mb-4">Project 2</h3>
-            <p className="text-gray-600 dark:text-gray-300 mb-4">
-              Description of your second featured project.
-            </p>
-            <a href="#" className="text-primary hover:underline">
-              Learn More →
-            </a>
-          </div>
-        </div>
-      </motion.section>
-    </div>
+        <motion.div
+          initial={{ opacity: 0, x: 20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5, delay: 0.4 }}
+          className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md"
+        >
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
+            Contact
+          </h2>
+          <ul className="space-y-2">
+            <li className="text-gray-600 dark:text-gray-300">• Email: kd2732@nyu.edu</li>
+            <li className="text-gray-600 dark:text-gray-300">• GitHub: github.com/kdibba</li>
+            <li className="text-gray-600 dark:text-gray-300">• LinkedIn: linkedin.com/in/khadijatoudibba</li>
+          </ul>
+        </motion.div>
+      </div>
+    </motion.div>
   );
 };
 
