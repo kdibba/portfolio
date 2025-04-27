@@ -2,16 +2,6 @@
 
 A modern, responsive portfolio website built with React, Vite, and Tailwind CSS. This portfolio showcases my projects, skills, and blog posts in a clean and professional manner.
 
-## Features
-
-- 🎨 Modern and responsive design
-- 🌙 Dark mode support
-- ⚡ Fast performance with Vite
-- 🎭 Smooth animations with Framer Motion
-- 📱 Mobile-friendly layout
-- 📝 Blog section for sharing insights
-- 🎯 Project showcase with filtering
-- 🎨 Customizable color scheme
 
 ## Tech Stack
 
@@ -33,7 +23,7 @@ A modern, responsive portfolio website built with React, Vite, and Tailwind CSS.
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/kdibba/portfolio.git
+git clone https://github.com/yourusername/portfolio.git
 cd portfolio
 ```
 
@@ -83,12 +73,9 @@ This project can be easily deployed to:
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Contact
 
-Khadijatou Dibba - [kdibba](https://github.com/kdibba) - kd2732@nyu.edu
+Khadijatou Dibba - kd2732@nyu.edu
 
 Project Link: [https://github.com/kdibba/portfolio](https://github.com/kdibba/portfolio)
